@@ -27,11 +27,12 @@ body{
     width: 100%;
     margin: 0 20px;
     padding: 70px 30px 44px;
-    border: 20px #9a9110;
     border-radius: 2.5rem;
     background: #174dbb;
     opacity: 0.8;
     text-align: center;
+    border: 2px solid #05167c;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
 .login-card > h2{
@@ -95,12 +96,12 @@ body{
 }
 
 .login-form > button:hover{
-    color: #6181b5;
-    background: #46e8d2;
+    color: #e5e6e7;
+    background: #1d7267;
 }
 
 .login-form > a{
-    color: #7aa1df;
+    color: #798b94;
     font-size: 0.9rem;
     font-style: italic;
     text-align: left;
