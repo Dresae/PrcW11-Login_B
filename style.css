@@ -21,22 +21,7 @@ body{
     animation: rotate 6s infinite alternate linear;
 }
 
-.login-card{
-    position: relative;
-    z-index: 3;
-    width: 100%;
-    margin: 0 20px;
-    padding: 70px 30px 44px;
-<<<<<<< HEAD
-    border-radius: 2.5rem;
-    background: #fff;
-=======
-    border-radius: 3.5rem;
-    background: #174dbb;
-    opacity: 0.8;
->>>>>>> QA
-    text-align: center;
-}
+
 
 .login-card > h2{
     font-size: 36px;
