@@ -13,7 +13,7 @@ body{
     place-items: center;
     margin: 0;
     padding: 0 24px;
-    background-image: url("background.svg");
+    background-image: url("clouds.png");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Ubuntu";
@@ -21,16 +21,33 @@ body{
     animation: rotate 6s infinite alternate linear;
 }
 
-
+.login-card{
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    margin: 0 20px;
+    padding: 70px 30px 44px;
+    border-radius: 2.5rem;
+    background: #174dbb;
+    opacity: 0.8;
+    text-align: center;
+    border: 6px solid #05167c;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
 
 .login-card > h2{
-    font-size: 36px;
+    position: relative;
+    top: -20px;
+    color: #ceecee;
+    font-size: 70px;
     font-weight: 600;
-    margin: 0 0 12px;
+    margin: -30px 0 12px;
 }
 
 .login-card > h3{
-    color: rgba(0, 0, 0, 0.38);
+    position: relative;
+    top: 15px;
+    color: #c1cacf;
     margin: 0 0 30px;
     font-weight: 500;
     font-size: 1rem;
@@ -43,22 +60,28 @@ body{
     gap: 16px;
 }
 
-.login-form > input, .login-form > button{
+.login-form > input{
     width: 100%;
     height: 50px;
 }
 
+.login-form button{
+    width: 100%;
+    height: 65px;
+}
+
 .login-form > input {
-    border: 2px solid #ebebeb;
+    border: 2px solid #10449A;
+    background-color: #0e3d9b;
     font-family: inherit;
-    font-size: 15px;
+    font-size: 14px;
     padding: 0 16px;
-    border-radius: 1.25rem;
+    border-radius: 1rem;
     transition: all 0.375s;
 }
 
 .login-form > input:hover{
-    border: 2px solid #10449A;
+    border: 2.5px solid #0c2c61;
 }
 
 .login-form > button{
@@ -66,8 +89,8 @@ body{
     width: 100%;
     padding: 0 16px;
     border-radius: 1.25rem;
-    background: #216ce7;
-    color: #f9f9f9;
+    background: #05167c;
+    color: #6181b5;
     border: 0;
     font-family: inherit;
     font-size: 1rem;
@@ -78,12 +101,14 @@ body{
 }
 
 .login-form > button:hover{
-    background: #10449A;
+    color: #fcfeff;
+    background: #11a05d;
 }
 
 .login-form > a{
-    color: #216ce7;
+    color: #798b94;
     font-size: 0.9rem;
+    font-style: italic;
     text-align: left;
     text-decoration: none;
     margin-bottom: 6px;
@@ -91,7 +116,25 @@ body{
 }
 
 .login-form > a:hover{
-    color: #10449A;
+    color: #d3d8e0;
+}
+
+.login-form ::placeholder{
+    color: #4b5f6a;
+}
+
+.login-form input{
+    font-size: 17px;
+    color: #a6e5db;
+}
+
+.login-form input:focus{
+    border-color: #2bebf5;
+    box-shadow: 0 0 10px #2bebf5;
+}
+
+.login-form input:focus::placeholder {
+    color: transparent;
 }
 
 @keyframes rotate{
@@ -108,4 +151,4 @@ body{
         margin: 0;
         width: 400px;
     }
-}   
+}
