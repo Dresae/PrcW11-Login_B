@@ -8,7 +8,7 @@ These Branches contain the same changes and look as follow:
 
 ![screenshot](pics/screenshot1.png)
 
-# Branches QA and Main
+# Branches joint, QA and Main
 These last two Branches have the final touches on the UI and UX of our floating Login form
 
 This is how it looks like:
